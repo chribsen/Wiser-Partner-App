@@ -1,0 +1,134 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+
+  <!-- START My consumption card -->
+  <!--
+  <div ng-controller="MyConsumptionIndicatorCtrl">
+        <div class="list card">
+            <div class="item item-divider">My performance</div>
+            <div class="item item-body">
+                <div class="row">
+                    <div class="col">
+                        <div ng-if="relative_impact=true">
+                           <i class="fa fa-arrow-up fa-5x" style="color:green"></i>
+                           <br> You are doing good!  
+                        </div>
+                        <div ng-if="relative_impact=false">
+                           <i class="fa fa-arrow-down fa-5x" style="color:red"></i>
+                           <br> You could do better
+                        </div>
+                    </div>
+                    <div class="col"> 
+                        <div ng-if="relative_impact=false">
+                            <i class="fa fa-arrow-up fa-5x" style="color:green"></i>
+                            <br> Better than average   
+                        </div>
+                        <div ng-if="relative_impact=true">
+                            <i class="fa fa-arrow-down fa-5x" style="color:red"></i>
+                            <br> Worse than average
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  -->
+    <!-- END My consumption card -->
+
+    <!-- START Last week consumption card (Line chart) -->
+    <div ng-controller="LastWeekConsumptionCtrl">
+        <div class="list card">
+        <div class="item item-divider">Consumption the last week</div>
+        <div class="item item-body">
+            <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="false" series="series"></canvas> 
+        </div>
+        </div>
+    </div> 
+    <!-- END Last week consumption card (Line chart) -->
+
+    <!-- START Kitchen Indicator -->
+    <div ng-controller="KitchenIndicatorCtrl">
+        <div class="list card">
+            <div class="item item-divider">My kitchen</div>
+            <div class="item item-body">
+                <div class="row">
+                    <div class="col">
+                        <!--
+                        <div ng-if="relative_impact==true">
+                           <i class="fa fa-arrow-up fa-5x" style="color:green"></i>
+                           <br> Kitchen are doing good!  
+                        </div>
+                        <div ng-if="relative_impact==false">
+                           <i class="fa fa-arrow-down fa-5x" style="color:red"></i>
+                           <br> Kitchen could do better
+                        </div>
+                    </div>
+                -->
+                    <div class="col"> 
+                        <div ng-if="relative_impact==false">
+                            <i class="fa fa-arrow-up fa-5x" style="color:green"></i>
+                            <br> Better than average   
+                        </div>
+                        <div ng-if="relative_impact==true">
+                            <i class="fa fa-arrow-down fa-5x" style="color:red"></i>
+                            <br> Worse than average
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Kitchen Indicator -->
+
+    <!-- START Ranking -->
+    <div ng-controller="RankingCtrl">
+        <div class="list card">
+            <div class="item item-divider">Kitchen Ranking</div>
+            <div class="item item-body">
+                <canvas id="bar" class="chart chart-bar" data="data"
+                labels="labels"></canvas>
+            </div>
+        </div>
+        </div>
+    </div> 
+    <!-- END Ranking -->
+
+    <!-- START Usage Type -->
+    <div ng-controller="UsageTypeCtrl">
+        <div class="list card">
+            <div class="item item-divider">Usage of Electricity vs. Heat</div>
+            <div class="item item-body">
+                  <canvas id="pie" class="chart chart-pie" data="data"labels="labels" options="options"></canvas> 
+            </div>
+        </div>
+    </div>
+    <!-- END Usage Type -->
+	
+
+    <!-- START Misc1 -->
+    <!--
+    <div class="list card">
+        <div class="item item-divider">New 1st place</div>
+        <div class="item item-body">
+            <div>
+              <b>Thomas N</b> is know in 1st place.
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- END Misc1 -->
+
+    <!-- START Misc2 -->
+    <!--
+    <div class="list card">
+        <div class="item item-divider">You and the average resident</div>
+        <div class="item item-body">
+            <div>
+              You are using a lot of power on <b>outlet 1</b>.
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- END Misc2 -->
+  </ion-content>
+</ion-view>

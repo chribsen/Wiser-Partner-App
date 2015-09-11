@@ -1,0 +1,22 @@
+<ion-view view-title="Ranking af køkkener">
+  <ion-content>
+        <p>{{test_ranking}}</p>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in data" type="item-text-wrap" href="#/tab/chats/{{chat.rank}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.kitchen.kitchen_name}}</h2>
+        <p>Tidligere rank: {{chat.previous_rank}}</p>
+        <p>Rank: {{chat.rank}}</p>
+
+        <div ng-if="chat.previous_rank > chat.rank"> <p>Faldet siden sidst</p></div>
+        <div ng-if="chat.previous_rank < chat.rank"> <p>Steget siden sidst</p></div>
+
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,44 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">Energy reccommendation</div>
+      <div class="item item-body">
+        <div>
+          You are using a lot of power on <b>outlet 1</b>.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="list card">
+      <div class="item item-divider">Energy reccommendation</div>
+      <div class="item item-body">
+
+  <div ng-controller="BarchartController">
+  {{ greeting }}
+          <canvas id="doughnut" class="chart chart-doughnut" data="data"
+  labels="labels"></canvas> 
+
+  </div>
+
+      </div>
+    </div>
+
+    <div class="list card">
+      <div class="item item-divider">Energy reccommendation</div>
+      <div class="item item-body">
+
+  <div ng-controller="GraphController">
+         <canvas id="line" class="chart chart-line" data="data"
+  labels="labels" legend="true" series="series">
+</canvas> 
+
+  </div>
+
+      </div>
+    </div>
+
+
+
+  </ion-content>
+</ion-view>

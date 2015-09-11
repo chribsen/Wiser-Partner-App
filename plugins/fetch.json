@@ -1,0 +1,53 @@
+{
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.console": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.console"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.ionic.keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "com.ionic.keyboard"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.salesforce": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.phonegap.plugins.PushPlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/forcedotcom/PushPlugin",
+            "subdir": ".",
+            "ref": "unstable"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
